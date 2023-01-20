@@ -262,6 +262,7 @@ string functions are->
 -->toupper(s1)
 -->to_string(s)
 --->stoi(s1) -->stirng to integer conversion
+-->getline(cin,str)
 ------------------------------------------------------------------
 
 
