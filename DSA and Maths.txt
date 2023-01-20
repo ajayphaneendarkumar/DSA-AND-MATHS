@@ -1,0 +1,271 @@
+Cpp MAthematics
+=================
+1.Modular Arithmetics:
+===========================
+mod is applied to addition,subtraction,multiplication and divsion
+formulas:-
+===================================
+-->(a+b)%mod =(a%mod + b%mod)%mod
+-->(a*b)%mod =(a%mod * b%mod)%mod
+-->(a-b)%mod =(a%mod - b%mod +mod)%mod
+-->(a/b)%mod =(a%mod * b^(-1)%mod)%mod
+
+2.congurence:
+======================
+-->when we apply the mod on a  given number, if we get the same number as output then we will say it is congurence.
+
+3.Extended Ecludeian Algorithm:-
+===============================
+-->ax+by =gcd(a,b)
+-->ax1+by1=gcd(b,a%b)
+-->ax1+(a%b)y1=gcd(b,a%b)
+-->........
+-->ax1+(a-y*(a/b))y1=gcd(b,a%b)
+-->b(x1-(a/b)y1)+ay1=ax+by
+
+***(x=y1 and y=(x1-(a/b)y1))****
+===================================
+-->ncr=n!/(n-r)!*r!
+-->ncr=nc(n-r)
+-->
+=================================
+example program for bit manipulation:-
+=====================================
+-->to find number of one bits?
+int find(unit_32 t n)
+{
+   int cnt=0;
+   while(n>0)
+   {
+      if(n&1==1)
+       {
+             cnt++;
+        }
+        n=n>>1; //right shift n=n<<1 //left shift
+    }
+  return cnt;
+} 
+======================================
+-->to find hamming distance?//bit manipulation
+int hamming(int x,int y)
+{
+  int res=(x^y);
+  while(res>0)
+   {
+        if(res&1==1)
+        {
+           cnt++;
+         }
+       res=res>>1;
+     }
+    return cnt;
+}
+===========================================
+-->example program for set?
+============================
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n;
+	    cin>>n;
+	    int a[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        cin>>a[i];
+	    }
+	    int k;
+	    cin>>k;
+	    set<int>s;//set declaration.
+	    for(int i=0;i<k;i++)//accessing the set.
+	    {
+	        int x;
+	        cin>>x;
+	        s.insert(x);
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        if(s.count(a[i]))
+	        {
+	            continue;
+	        }
+	        else{
+	            cout<<a[i];
+	        }
+	    }
+	    cout<<"\n";
+	}
+	return 0;
+}
+======================================================================
+linked list:-
+===============
+-->reverse a linked list
+==========================
+-->time complexity of reversing a linked  list is "o(N)".
+ ListNode* Reverse(ListNode* head)
+{
+   ListNode* newHead=NULL;
+   while(head!=NULL)
+   {
+     ListNode * next=head->next;
+     head->next=newHead;
+     newHead=head;
+     head=next;
+    }
+     return newHead;
+}
+================================
+-->remove nth node from back of linked list.
+-->coomplexity is o(2n)
+ ListNode* Remove(ListNode* head,int n)
+{
+   ListNode* newHead=new ListNode();
+   newHead->next=head;
+   ListNode* fast=newHead;
+   ListNode* slow=newHead;
+   for(int i=1;i<=n;i++)
+    {
+       fast=fast->next;
+    }
+    while(fast->next!=NULL)
+    {
+       slow=slow->next;
+       fast=fast->next;
+    }
+    slow->next=slow->next->next;
+    return newHead->next;
+}
+=====================================
+
+->linked list -->print nodes,length,even node postions,odd nodes,palindrome check,middle node,binary to integer,remove head node,reverse,remove nth node from end.
+
+===========================================================================================================================================================================
+GRAPHS:-
+=========================
+-->graph is a combination of verxtex or nodes and edges.
+-->G=v(E)
+-->there are two types of graphs they are directed and undirected graph.
+-->undirected graph:- the graph which has no directions is called as undirected graph and it can move from u -> v or v -> u.
+-->degree of the undirected graph is nothing but no .of edges to each vertex.
+-->toal degree = 2*no.of edges.
+-->directed graph :-the graph which has directions is called as directed graph and it can move only in one direction u->v.
+-->In directed graph there are indegree and outdeigree -->indegree is nothing but the edges which are coming in and outdegree is nothing but the edges which are going out from that vertex. 
+-->how to read input in grpahs:-
+==============================================================================================
+#include<bits/stdc++.h>
+using namespace std;
+vector<int>adj[n+1];
+int main()
+{
+  int n ,m;
+  cin>>n>>m; //n -> nodes ,m -> edges
+  for(int i=0;i<m;i++)
+  {
+      int u,v;
+      cin>>u>>v;
+      adj[u].push_back(v);
+      adj[v].push_back(u);
+  }
+}
+================================================================================================
+DFS call:-
+=====================================================
+#include<bits/stdc++.h>
+using namespace std;
+void DFS(int node , vector<int>&vis , vector<int>adj[])
+{
+   vis[node]=1;
+   cout<<node<<" ";
+   for(auto it : adj[node])
+   {
+     if(vis[node]!=1)
+     {
+         DFS(node ,  vis , adj);
+     }
+   }
+}
+vector<int>adj[n+1];
+int main()
+{
+  int n ,m;
+  cin>>n>>m; //n -> nodes ,m -> edges
+  for(int i=0;i<m;i++)
+  {
+      int u,v;
+      cin>>u>>v;
+      adj[u].push_back(v);
+      adj[v].push_back(u);
+  }
+  vector<int>vis[n+1 ,0];
+  for(int i=0;i<=n'i++)
+  {
+    if(!vis[i]){
+       DFS(i,vis,adj);
+      }
+  }
+
+}
+====================================================================================================
+
+-->VECTORS:-
+=============================================================================================
+-->Vectors are just like arrays but arrays have fixed size whereas vectors can have any size.
+-->syntax:- vector<datatype>vector_name;
+eg:- vector<int>v;
+   -->vector<vector<int>>v;
+   -->pair<int,int>p;
+   -->various operations that we can perform on vectors are :-
+  -->v.push_back(ele);
+  -->v.pop_back(ele);
+  -->reverse(v.begin(),v.end());
+  -->v.find(v.begin() , v.end());
+  -->v.erase(v.begin()+3); // erase element at that position.
+  -->v.erase(v.begin()+2 ,v.begin()+5); // erase elements from 2 to 5 postions.
+  -->v1.swap(v2);
+  -->v.erase(v.begin()+4) // erase element at that position.
+  -->sort(v.begin(),v.end())
+  -->*max_element(v.begin(),v.end());
+  -->*min_element(v.begin(),v.end());
+=================================================================================================
+-->MAPS:-
+====================================================================
+syntax-->map <key_type, data_type>map_name;
+----> mp.size();
+---->m.insert(make_pair("hello",9)); //how to insert elements into map.
+ eg:-
+   -->map<int,int>mp;
+   -->unordered_map<int,int>mp;
+-->In most of the duplicates cases we will use map.
+--------------------------------------------------------------
+-->set:-
+=================================================================
+ syntax->set<int>s;
+ for(int i=0;i<n;i++)
+ {
+   int k;
+   cin>>k;
+   s.insert(k);
+ }
+---------------------------------------------------------------
+strings:-
+==================
+string functions are->
+-->reverse(s.begin(),s.end()) or strrev(s)
+-->strcpy(s1,s2) or s1.copy(s2)
+-->strlen(s1)
+-->s1.swap(s2)
+-->tolowwer(s1)
+-->toupper(s1)
+-->to_string(s)
+--->stoi(s1) -->stirng to integer conversion
+------------------------------------------------------------------
+
+
+
+
+
+
