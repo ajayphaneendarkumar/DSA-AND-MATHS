@@ -264,7 +264,31 @@ string functions are->
 --->stoi(s1) -->stirng to integer conversion
 -->getline(cin,str)
 ------------------------------------------------------------------
-
+STL CONTAINERS:-
+=======================
+sequence containers:-implement a data structures which can be accessed in a sequential manner.
+-->vectors,lists,arrays,dequeue
+-->vectors:-
+     vector<int>v; //empty vector
+     v.push_back(ele);
+     v.pop_back(ele);
+     v.emplace_back(ele);
+     reverse(v.begin(),v.end());
+     sort(v.begin(),v.end(),greater<int>());
+     v.find(ele); //finding specific element in the vector
+     v.erase(v.begin()+3); //erasing the element inthe given range
+     v.insert(v.begin());
+     v1.swap(v2);
+     reverse(v.rbegin() , v.rend());
+     sort(v.rbegin(),v.rend());
+     for(auto it:v)
+     {
+       cout<<it<<" ";
+     }
+     for(auto it=v.begin() ; it!=v.end();it++) 
+     {
+              cout<<it<<" ";
+     }
 
 
 
