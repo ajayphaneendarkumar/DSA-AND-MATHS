@@ -289,7 +289,7 @@ sequence containers:-implement a data structures which can be accessed in a sequ
      {
               cout<<it<<" ";
      }
-
+     is_sorted(arr,arr+n);
 
 
 
