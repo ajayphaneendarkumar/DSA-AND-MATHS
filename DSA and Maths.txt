@@ -304,8 +304,15 @@ list<int>l;
     {
       cout<<it<<" ";
      }
+ --->for(auto it=l.begin();it!=l.end();it++)
+      {
+         cout<<it<<" ";   cout<<*(it)<<" ";
+      }
 --->l.emplace_back(ele);
 --->l.emplace_front(ele);
+---->l.pop_back(ele);
+---->l.sort(); //sorting the lsit.
+----->l.reverse(); //reverse the list
 =================================================================================================
 Forward list:-
 ================
@@ -313,5 +320,16 @@ syntax:-
    forward_list<int>l;
    same operations like list.
 ------------------------------------------------------------------------------------------
-
+DEQUEUE:-
+=======================================================
+SYNTAX:-
+  -->dequeue<int>dq;
+-----------------------
+  -->dq.push_back(ele);
+  -->dq.push_front(ele);
+  -->dq.pop_front(ele);
+  -->dq.pop_back(ele);
+  -->dq.emplace_back(ele);
+  -->dq.max_size();
+=======================================================================================================================
 
