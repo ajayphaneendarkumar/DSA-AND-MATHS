@@ -291,6 +291,20 @@ sequence containers:-implement a data structures which can be accessed in a sequ
      }
      is_sorted(arr,arr+n); //used to check whether the vector is sorted or not.
 
-
+=============================================================================================
+LIST:-
+---------------------
+syntax:-
+list<int>l;
+-->l.push_back(ele);
+-->l.push_front(ele);
+-->l.pop_front(ele);
+-->for(auto it:l)
+    {
+      cout<<it<<" ";
+     }
+--->l.emplace_back(ele);
+--->l.emplace_front(ele);
+=================================================================================================
 
 
