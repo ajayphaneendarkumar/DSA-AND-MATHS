@@ -269,28 +269,29 @@ STL CONTAINERS:-
 sequence containers:-implement a data structures which can be accessed in a sequential manner.
 -->vectors,lists,arrays,dequeue
 -->vectors:-
-     vector<int>v; //empty vector
-     v.push_back(ele);
-     v.pop_back(ele);
-     v.emplace_back(ele);
-     reverse(v.begin(),v.end());
-     sort(v.begin(),v.end(),greater<int>());
-     v.find(ele); //finding specific element in the vector
-     v.erase(v.begin()+3); //erasing the element inthe given range
-     v.insert(v.begin());
-     v1.swap(v2);
-     reverse(v.rbegin() , v.rend());
-     sort(v.rbegin(),v.rend());
-     for(auto it:v)
+--->vector<int>v; //empty vector
+--->v.push_back(ele);
+--->v.pop_back(ele);
+--->v.emplace_back(ele);
+--->reverse(v.begin(),v.end()); //reversing the vector.
+--->sort(v.begin(),v.end(),greater<int>()); //sorting purpose.
+--->v.find(ele); //finding specific element in the vector.
+--->v.erase(v.begin()+3); //erasing the element inthe given range.
+--->v.insert(v.begin());
+--->v1.swap(v2); //swaping two vectors.
+--->reverse(v.rbegin() , v.rend());
+--->sort(v.rbegin(),v.rend());
+---->for(auto it:v)
      {
        cout<<it<<" ";
      }
-     for(auto it=v.begin() ; it!=v.end();it++) 
+---->for(auto it=v.begin() ; it!=v.end();it++) 
      {
               cout<<it<<" ";
      }
-     is_sorted(arr,arr+n); //used to check whether the vector is sorted or not.
-
+--->is_sorted(arr,arr+n); //used to check whether the vector is sorted or not.
+--->v.clear(); //clears the list
+--->v.empty();  //return true if the list is empty else return false.
 =============================================================================================
 LIST:-
 ---------------------
@@ -306,5 +307,11 @@ list<int>l;
 --->l.emplace_back(ele);
 --->l.emplace_front(ele);
 =================================================================================================
+Forward list:-
+================
+syntax:-
+   forward_list<int>l;
+   same operations like list.
+------------------------------------------------------------------------------------------
 
 
