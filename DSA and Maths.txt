@@ -264,12 +264,35 @@ string functions are->
 --->stoi(s1) -->stirng to integer conversion
 -->getline(cin,str)
 ------------------------------------------------------------------
+subarrays:-
+===================================================================
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a[] = {1,2,3,4,5};
+    int n = 5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i;j<n;j++)
+        {
+          for(int k=i;k<=j;k++){
+            cout << a[k] << " ";
+          }
+           cout << endl;
+        }
+       
+    }
+}
+==================================================================================
 STL CONTAINERS:-
 =======================
 sequence containers:-implement a data structures which can be accessed in a sequential manner.
 -->vectors,lists,arrays,dequeue
 -->vectors:-
 --->vector<int>v; //empty vector
+--->vector<vector<int>>v;
+-->pair<int,int>p;
 --->v.push_back(ele);
 --->v.pop_back(ele);
 --->v.emplace_back(ele);
@@ -292,6 +315,8 @@ sequence containers:-implement a data structures which can be accessed in a sequ
 --->is_sorted(arr,arr+n); //used to check whether the vector is sorted or not.
 --->v.clear(); //clears the list
 --->v.empty();  //return true if the list is empty else return false.
+int y=*max_element(v.begin(),v.end());
+int x=*min_element(v.begin(),v.end());
 =============================================================================================
 LIST:-
 ---------------------
@@ -313,6 +338,8 @@ list<int>l;
 ---->l.pop_back(ele);
 ---->l.sort(); //sorting the lsit.
 ----->l.reverse(); //reverse the list
+---->l.assign(a,a+n);
+---->l.unique();
 =================================================================================================
 Forward list:-
 ================
@@ -331,5 +358,36 @@ SYNTAX:-
   -->dq.pop_back(ele);
   -->dq.emplace_back(ele);
   -->dq.max_size();
+  --->dq1.swap(dq2);
 =======================================================================================================================
-
+ASSOCIATIVE CONTAINERS:-
+------------------------------------
+Associative containers implement sorted data structures that can be quickly searched (O(log n) complexity). 
+SET:-
+------------------------------------------------------------------
+-->SYNTAX:-
+     set<data_type>s;
+-->s.insert(ele);  
+ -->for(int i=0;i<n;i++) 
+    {
+        int k;
+	cin>>k;
+        s.insert(k);
+     }
+-->s.empty();
+-->set<int,greater<int>>s;
+--->s.erase(ele);
+--->s.lower_bound(ele);
+--->s.upper_bound(ele);
+==========================================================================================================
+MAP:-
+=========================
+SYNTAX:-
+  map<int,int>mp;
+  map<data_type1,data_type2>mp;
+  for(auto it:mp)
+  {
+     cout<<it<<" ";
+  }
+ ================================================================================================  
+   
