@@ -404,7 +404,9 @@ SYNTAX:-
  -->ms.count(ele); //counts the number of times the element occurs in multiset.
  -->ms.find(ele);
  -->ms.erase(ms.find(ele),ms.find(ele)+3);
+ -->mutli set can store duplicate elements
  ================================================================================================  
-   MULTI MAP:-
-   ------------------------------------------------
+ADAPTIVE CONTAINERS:-
+=====================================
+-->STACK,QUEUE,PRIORITY QUEUE
    
