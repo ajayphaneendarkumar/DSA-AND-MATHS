@@ -347,10 +347,10 @@ syntax:-
    forward_list<int>l;
    same operations like list.
 ------------------------------------------------------------------------------------------
-DEQUEUE:-
+DEQUE:-
 =======================================================
 SYNTAX:-
-  -->dequeue<int>dq;
+  -->deque<int>dq;
 -----------------------
   -->dq.push_back(ele);
   -->dq.push_front(ele);
