@@ -395,7 +395,8 @@ SYNTAX:-
   mp.lower_bound(ele); //deals with lower and upper bounds of a map
   mp.upper_bound(ele);
   mp.insert(piar<int,int>(ele1,ele2));
-  ==============================================================================================================
+  -->m[key]=value; //adds value to the key.
+==============================================================================================================
   MULTISET:-
   ===================
   SYNTAX:-
