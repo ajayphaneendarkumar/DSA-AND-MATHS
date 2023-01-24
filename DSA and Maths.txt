@@ -367,16 +367,17 @@ SET:-
 ------------------------------------------------------------------
 -->SYNTAX:-
      set<data_type>s;
--->s.insert(ele);  
+-->s.insert(ele);  //inserts ele into set
  -->for(int i=0;i<n;i++) 
     {
         int k;
 	cin>>k;
         s.insert(k);
      }
--->s.empty();
+-->s.empty(); //returns true if set is empty else false
 -->set<int,greater<int>>s;
 --->s.erase(ele);
+--->s.count(ele);
 --->s.lower_bound(ele);
 --->s.upper_bound(ele);
 ==========================================================================================================
@@ -384,10 +385,26 @@ MAP:-
 =========================
 SYNTAX:-
   map<int,int>mp;
-  map<data_type1,data_type2>mp;
+  map<data_type1,data_type2>mp; //empty map
+  map<int,pair<int,int>>mp;
+  map<pair<int,int>,int>mp;
   for(auto it:mp)
   {
      cout<<it<<" ";
   }
+  mp.lower_bound(ele); //deals with lower and upper bounds of a map
+  mp.upper_bound(ele);
+  ==============================================================================================================
+  MULTISET:-
+  ===================
+  SYNTAX:-
+  mutliset<int>ms; //empty multiset
+ --> ms.insert(ele); //inserts ele into multiset
+ -->ms.empty();
+ -->ms.count(ele); //counts the number of times the element occurs in multiset.
+ -->ms.find(ele);
+ -->ms.erase(ms.find(ele),ms.find(ele)+3);
  ================================================================================================  
+   MULTI MAP:-
+   ------------------------------------------------
    
