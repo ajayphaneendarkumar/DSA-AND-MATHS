@@ -317,6 +317,8 @@ sequence containers:-implement a data structures which can be accessed in a sequ
 --->v.empty();  //return true if the list is empty else return false.
 int y=*max_element(v.begin(),v.end());
 int x=*min_element(v.begin(),v.end());
+-->v.begin();
+-->v.end();
 =============================================================================================
 LIST:-
 ---------------------
@@ -364,6 +366,8 @@ SYNTAX:-
   -->dq.find(ele);
   -->dq.erase(ele);
   -->dq.empty();
+  -->dq.front();
+  -->dq.back();
 =======================================================================================================================
 ASSOCIATIVE CONTAINERS:-
 ------------------------------------
@@ -413,10 +417,44 @@ SYNTAX:-
  -->ms.erase(ms.find(ele),ms.find(ele)+3);
  -->mutli set can store duplicate elements
  ================================================================================================  
-ADAPTIVE CONTAINERS:-
+ADAPTOR CONTAINERS:-
 =====================================
--->STACK,QUEUE,PRIORITY QUEUE\
-STACK:-
--------------------
--->
+-->STACK,QUEUE,PRIORITY QUEUE
+STACK:-(lifo ->last in first out)(time complexity:O(1))
+========================================================
+-->Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only  
+-->it is having a potinter called top.
+-->SYANTAX:-
+    stack<int>st; //empty stack.
+BASIC OPERATIONS:-
+=================
+-->st.push(ele) //adding element at the top of the stack;
+-->st.pop();  //removing most recently added element.
+-->st.empty(); //returns wether the stack is empty or not.
+-->st.size() //returns size of the stack.
+-->top() // Returns a reference to the top most element of the stack – Time Complexity : O(1)
+-->st.swap(st1); //swapping of two stacks.
+implementation:
+    #include<bits/stdc++.h>
+    using namespace std;
+    int main()
+    {
+      stack<data_type>st;
+      st.push(1);
+      st.push(2);
+      st.push(3);
+      st.push(4);
+      st.pop();
+      st.pop();
+      while(!st.empty())
+      {
+         cout<<st.top()<<" ";
+	 st.pop();
+       }
+      }
+=======================================================================================
+QUEUE:-(FIFO-FIRST IN FIRST OUT)
+=============================
+
+         
    
