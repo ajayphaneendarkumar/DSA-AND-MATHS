@@ -455,6 +455,37 @@ implementation:
 =======================================================================================
 QUEUE:-(FIFO-FIRST IN FIRST OUT)
 ================================
+-->queue is one of the adaptor container that follows first in first out rule.every time new elements are added at back and removed from front.
+-->syntax:-
+      queue<int>q;
+BASIC OPERATIONS:-
+===========================
+-->q.push(ele); //adds element at the back.
+-->q.pop();     //removes the element from fornt.
+-->q.front();   //returns the  first element of the queue.
+-->q.back();    //retuns the last element of the queue.
+-->q.size();    //returns the size.
+-->q.empty();
+------------------------------------------------------------------
+IMPLEMENTATION:-
+=============================================
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    queue<int>q;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+    q.pop();
+    while(!q.empty())
+    {
+      cout<<q.front()<<" ";
+      q.pop();
+      }
+   }
+===========================================================================================================
+PRIORITY_QUEUE:-
+=============================
 
-         
    
