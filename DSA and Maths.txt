@@ -487,5 +487,35 @@ int main()
 ===========================================================================================================
 PRIORITY_QUEUE:-
 =============================
-
-   
+A C++ priority queue is a type of container adapter, specifically designed such that the first element of the queue is either the greatest or the smallest of all elements in the queue.
+SYNTAX:-
+===========
+priority_queue<data_type>pq;
+priority_queue<data_type, vector<int>, greater<int>>pq; //to access the min heap data structures.
+BASIC OPERATIONS:-
+========================
+-->pq.push(ele);  //adds element at the back of priority queue.
+-->pq.pop();      //removes or deletes element at the front.
+-->pq.top();    //returns topmost element of the queue.
+-->pq.size();   //returns the size of queue
+-->pq.empty();
+-->pq.emplace(ele); //insert new element in to the queue.
+-----------------------------------------------------------------------------
+implementation:-
+--------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   priority_queue<int>pq;
+   pq.push(10);
+   pq.push(20);
+   pq.push(30);
+   pq.pop();
+   while(!pq.empty())
+   {
+      cout<<pq.top()<<" ";
+      pq.pop();
+   }
+}
+=================================================================================================
