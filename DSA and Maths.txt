@@ -524,3 +524,23 @@ int main()
    }
 }
 =================================================================================================
+PAIR:-
+================
+-->"< >" is called as utility header.
+-->pair is used to combine two values together that may be of two data types.
+--->first element is always called as first.
+--->second element is always called as second and the order is same (first,second).
+--->SYNTAX:-
+  =======================
+    pair<data_type1,data_type2>pair_name;
+  -->make_pair() member functions
+    ===============================
+    --> pair_name=make_pair(value1,value2);
+   --------------------------------------------------------
+--->swapping:-
+      pair1.swap(pair2);
+--->cout<<pair_name.first<<" " <<pair_name.second;    
+--->tie():-
+       tie(int &, int &) = pair1;
+ -->
+
