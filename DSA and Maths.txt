@@ -319,6 +319,11 @@ int y=*max_element(v.begin(),v.end());
 int x=*min_element(v.begin(),v.end());
 -->v.begin();
 -->v.end();
+-->for(auto it:v) 
+   { 
+       sum=sum+it.second;  //vector pair sum
+    }
+    return sum;
 =============================================================================================
 LIST:-
 ---------------------
