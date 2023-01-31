@@ -567,4 +567,53 @@ PAIR:-
 =========================================================================================================
 BIT MANIPULATION:-
 =======================================
+Bit Wise operators are:-
+   ->bitwise AND(&)
+   ->bitwise XOR(^)
+   ->bitwise OR(|)
+   ->bitwise NOT(!)
+Operators Operations	Result
+XOR	X ^ 0s	X
+XOR	X ^ 1s	~X
+XOR	X ^ X	0
+AND	X & 0s	0
+AND	X & 1s	X
+AND	X & X	X
+OR	X | 0s	X
+OR	X | 1s	1s
+OR	X | X	X
+---------------------------
+--->GET BIT:-
+     This method is used to find the bit at a particular position(say i) of the given number N. The idea is to find the Bitwise AND of the given number and 2i that can be represented as (1 << i). If the value return is 1 then the bit at the ith position is set. Otherwise, it is unset.
 
+  IMPLEMENTATION:-
+    ------------------
+       bool getbit(int n,int i)
+       {
+         return (n&(1<<i)!=0);
+	}
+=======================================================================================
+SET BIT:-
+============
+This method is used to set the bit at a particular position(say i) of the given number N. The idea is to update the value of the given number N to the Bitwise OR of the given number N and 2i that can be represented as (1 << i). If the value return is 1 then the bit at the ith position is set. Otherwise, it is unset.
+IMPLEMENTATION:-
+==================
+bool setbit(int n ,int i)
+{
+   return (n | (1<<i) );
+}
+=============================================================================================
+clear bit:-(unset)
+===============================
+bool unset(int n ,int i)
+{
+  return (n & ~(1<<i));
+ }
+ -------------------------------
+ to print binary  numbers --> for(int i=n;i>=0;i--)
+                              {
+			         cout<<((n>>i)&1)<<" ";
+		               }
+===================================================================================
+
+			   
