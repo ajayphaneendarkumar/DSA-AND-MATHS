@@ -399,12 +399,16 @@ SET:-
 -->SYNTAX:-
      set<data_type>s;
 -->s.insert(ele);  //inserts ele into set
- -->for(int i=0;i<n;i++) 
+ -->for(int i=0;i<n;i++)  //reading the set.
     {
         int k;
 	cin>>k;
         s.insert(k);
      }
+ -->for(int i=0;i<n;i++)  //inserting array elements in to set.
+ {
+    s.insert(arr[i);
+    } 
 -->s.empty(); //returns true if set is empty else false
 -->set<int,greater<int>>s;
 --->s.erase(ele);
