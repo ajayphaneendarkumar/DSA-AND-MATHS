@@ -285,6 +285,14 @@ int main()
     }
 }
 ==================================================================================
+PATTERNS:-
+======================================================================================
+PATTERNS WORKS ON NESTED LOOP NOTHING BUT LOOPING CONCEPT
+-->1)FOR THE OUTER LOOP ,COUNT THE NUMBER OF LINES OR NUMBER OF ROWS
+-->2)FOR THE INNER LOOP , FOCUS ON THE COLUMNS TO CONNECT THEM HOWUSE TO ROWS.
+-->3)PRINT THE PATTERN INSIDE THE INNER LOOP.
+-->4)OBSERVE THE SYMMETRY(OPTIONAL).
+===============================================================================================
 STL CONTAINERS:-
 =======================
 sequence containers:-implement a data structures which can be accessed in a sequential manner.
