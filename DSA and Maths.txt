@@ -210,47 +210,6 @@ int main()
 
 }
 ====================================================================================================
-
--->VECTORS:-
-=============================================================================================
--->Vectors are just like arrays but arrays have fixed size whereas vectors can have any size.
--->syntax:- vector<datatype>vector_name;
-eg:- vector<int>v;
-   -->vector<vector<int>>v;
-   -->pair<int,int>p;
-   -->various operations that we can perform on vectors are :-
-  -->v.push_back(ele);
-  -->v.pop_back(ele);
-  -->reverse(v.begin(),v.end());
-  -->v.find(v.begin() , v.end());
-  -->v.erase(v.begin()+3); // erase element at that position.
-  -->v.erase(v.begin()+2 ,v.begin()+5); // erase elements from 2 to 5 postions.
-  -->v1.swap(v2);
-  -->v.erase(v.begin()+4) // erase element at that position.
-  -->sort(v.begin(),v.end())
-  -->*max_element(v.begin(),v.end());
-  -->*min_element(v.begin(),v.end());
-=================================================================================================
--->MAPS:-
-====================================================================
-syntax-->map <key_type, data_type>map_name;
-----> mp.size();
----->m.insert(make_pair("hello",9)); //how to insert elements into map.
- eg:-
-   -->map<int,int>mp;
-   -->unordered_map<int,int>mp;
--->In most of the duplicates cases we will use map.
---------------------------------------------------------------
--->set:-
-=================================================================
- syntax->set<int>s;
- for(int i=0;i<n;i++)
- {
-   int k;
-   cin>>k;
-   s.insert(k);
- }
----------------------------------------------------------------
 strings:-
 ==================
 string functions are->
@@ -567,7 +526,9 @@ PAIR:-
 --->second element is always called as second and the order is same (first,second).
 --->SYNTAX:-
   =======================
-    pair<data_type1,data_type2>pair_name;
+   --> pair<data_type1,data_type2>pair_name;
+   -->pair<int , pair<int,int>>p;
+   -->pair<int,int>arr[];
   -->make_pair() member functions
     ===============================
     --> pair_name=make_pair(value1,value2);
@@ -575,9 +536,7 @@ PAIR:-
 --->swapping:-
       pair1.swap(pair2);
 --->cout<<pair_name.first<<" " <<pair_name.second;    
---->tie():-
-       tie(int &, int &) = pair1;
- -->
+--->cout<<p.first<<p.second.first<<p.second.second;
 =========================================================================================================
 BIT MANIPULATION:-
 =======================================
