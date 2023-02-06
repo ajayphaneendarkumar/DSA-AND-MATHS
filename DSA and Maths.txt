@@ -293,6 +293,12 @@ PATTERNS WORKS ON NESTED LOOP NOTHING BUT LOOPING CONCEPT
 -->3)PRINT THE PATTERN INSIDE THE INNER LOOP.
 -->4)OBSERVE THE SYMMETRY(OPTIONAL).
 ===============================================================================================
+STL :-
+-->containers
+-->algorithms
+-->functions
+-->iteratotrs
+=======================
 STL CONTAINERS:-
 =======================
 sequence containers:-implement a data structures which can be accessed in a sequential manner.
