@@ -277,6 +277,7 @@ sequence containers:-implement a data structures which can be accessed in a sequ
 --->v1.swap(v2); //swaping two vectors.
 --->reverse(v.rbegin() , v.rend());
 --->sort(v.rbegin(),v.rend());
+--->sort(arr,arr+n,greater<int>); //decreasing order sorting
 ---->for(auto it:v)
      {
        cout<<it<<" ";
@@ -313,6 +314,8 @@ int x=*min_element(v.begin(),v.end());
          s.insert(b[i]);
 	}
 	return s.size();
+=================================
+-->to find the permutations --> "next_permutation(s.begin(),s.end());"-->keep it in while loopand print every time "S".
 	   
 =============================================================================================
 LIST:-
@@ -389,7 +392,7 @@ SET:-
 --->s.lower_bound(ele);
 --->s.upper_bound(ele);
 ==========================================================================================================
-MAP:-
+MAP:-(O(logn))
 =========================
 SYNTAX:-
   map<int,int>mp;
@@ -575,6 +578,7 @@ bool setbit(int n ,int i)
 {
    return (n | (1<<i) );
 }
+-->"_builtin_popcount()" -->returns the number of set bits. -->" _builtin_popcountll()".
 =============================================================================================
 clear bit:-(unset)
 ===============================
