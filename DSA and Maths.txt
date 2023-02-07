@@ -452,8 +452,8 @@ implementation:
        }
       }
 =======================================================================================
-QUEUE:-(FIFO-FIRST IN FIRST OUT)
-================================
+QUEUE:-(FIFO-FIRST IN FIRST OUT)-->linear data structure
+==========================================================
 -->queue is one of the adaptor container that follows first in first out rule.every time new elements are added at back and removed from front.
 -->syntax:-
       queue<int>q;
@@ -489,8 +489,8 @@ PRIORITY_QUEUE:-
 A C++ priority queue is a type of container adapter, specifically designed such that the first element of the queue is either the greatest or the smallest of all elements in the queue.
 SYNTAX:-
 ===========
-priority_queue<data_type>pq;
-priority_queue<data_type, vector<int>, greater<int>>pq; //to access the min heap data structures.
+priority_queue<data_type>pq; //max heap
+priority_queue<data_type, vector<int>, greater<int>>pq; //to access the min heap data structures.-->minimum heap.
 BASIC OPERATIONS:-
 ========================
 -->pq.push(ele);  //adds element at the back of priority queue.
@@ -528,7 +528,7 @@ PAIR:-
   =======================
    --> pair<data_type1,data_type2>pair_name;
    -->pair<int , pair<int,int>>p;
-   -->pair<int,int>arr[];
+   -->pair<int,int>arr[];  //array pair
   -->make_pair() member functions
     ===============================
     --> pair_name=make_pair(value1,value2);
