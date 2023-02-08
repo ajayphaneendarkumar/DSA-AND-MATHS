@@ -314,6 +314,7 @@ int x=*min_element(v.begin(),v.end());
          s.insert(b[i]);
 	}
 	return s.size();
+====================================================================
 -->for(auto it:v)
   {
     int cnt=count(s.begin(),s.end(),it);     //count the number times a character or element occurs.
