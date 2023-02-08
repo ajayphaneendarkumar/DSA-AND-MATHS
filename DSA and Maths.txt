@@ -314,6 +314,10 @@ int x=*min_element(v.begin(),v.end());
          s.insert(b[i]);
 	}
 	return s.size();
+-->for(auto it:v)
+  {
+    int cnt=count(s.begin(),s.end(),it);     //count the number times a character or element occurs.
+   }
 =================================
 -->to find the permutations --> "next_permutation(s.begin(),s.end());"-->keep it in while loopand print every time "S".
 	   
