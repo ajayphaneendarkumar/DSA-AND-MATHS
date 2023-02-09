@@ -319,10 +319,10 @@ int x=*min_element(v.begin(),v.end());
   {
     int cnt=count(s.begin(),s.end(),it);     //count the number times a character or element occurs.
    }
-=================================
--->to find the permutations --> "next_permutation(s.begin(),s.end());"-->keep it in while loopand print every time "S".
-	   
-=============================================================================================
+================================================================================================================================
+-->to find the next_permutations --> "next_permutation(s.begin(),s.end());"-->keep it in while loopand print every time "S".
+-->to find the previous permutations-->"prev_permutation(s.begin(),s.end());"-->keep it in while loopand print every time "S".	   
+=================================================================================================================================
 LIST:-
 ---------------------
 syntax:-
