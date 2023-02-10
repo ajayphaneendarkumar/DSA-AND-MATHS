@@ -244,6 +244,11 @@ int main()
     }
 }
 ==================================================================================
+to read the fast input and print them we have  the foolowing syntaxes:-
+-->ios_base::sync_with_stdio(false);
+-->cin.tie(NULL);
+-->cout.tie(NULL);
+=====================================================================================
 PATTERNS:-
 ======================================================================================
 PATTERNS WORKS ON NESTED LOOP NOTHING BUT LOOPING CONCEPT
