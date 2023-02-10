@@ -603,6 +603,8 @@ bool unset(int n ,int i)
   RECURSION:-
   ===================
   -->when a function calls itself until a specified condition is met.
+  -->recursion we can perform based on permutations and combinations.
+  -->("next_permutation(v.begin(),v.end())" , "prev_permutation(v.begin(),v.end())")-->while loop for next_permutations.
   -->basic sudo code:-
        #include<bits/stdc++.h>
        using namespace std;
@@ -642,4 +644,4 @@ bool unset(int n ,int i)
      cout<<fact(n);
    }
 ===================================================
- 
+ -->
