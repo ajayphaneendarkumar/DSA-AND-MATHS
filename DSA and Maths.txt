@@ -727,4 +727,14 @@ void func(int index,vector<int>&v,vector<vector<int>>&ans,vector<int>&nums)
     }
 };
 ======================================================================
-
+PREFIX-SUM:-
+=============================
+int prefix[n];
+prefix[0]=a[0];
+for(int i=0;i<n;i++)
+{
+   prefix[i]=a[i]+prefix[i-1];   //to read prefix array.
+ }
+ sum=prefix[r]-prefix[l-1];
+ if l==0 sum=prefix[r];
+ ---------------------------------------------------
