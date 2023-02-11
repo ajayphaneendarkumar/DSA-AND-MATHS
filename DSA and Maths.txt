@@ -703,4 +703,28 @@ int main()
  }
  -->2^n -->subsets we will for the given array of size "n".
  =======================================================================================  
-  
+  to print subsets:-
+  class Solution {
+public:
+void func(int index,vector<int>&v,vector<vector<int>>&ans,vector<int>&nums)
+{
+
+    ans.push_back(v);
+    for(int i=index;i<nums.size();i++)
+    {
+        v.push_back(nums[i]);
+        func(i+1,v,ans,nums);  //pick call
+        v.pop_back();
+    }
+    return ;
+}
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>>ans;
+        vector<int>v;
+        int index=0;
+        func(index,v,ans,nums);
+        return ans;
+    }
+};
+======================================================================
+
