@@ -701,5 +701,6 @@ int main()
    func(0,0,ds,sum,arr,n);
    return ds;
  }
+ -->2^n -->subsets we will for the given array of size "n".
  =======================================================================================  
-    
+  
