@@ -663,4 +663,43 @@ bool unset(int n ,int i)
        cout<<palindrome(0,s);
       }
 =================================================================================
--->
+-->subsequences using recursion:-
+================================
+#include<bits/stdc++.h>
+using namespace std;
+int func(int ind,int s,vector<int>&ds,int sum,int arr[],int n)
+{
+   if(ind==n)//base case.                                           if(ind==n)
+   {                                                                {
+     if(s==sum)                                                         if(s==sum)    
+       for(auto it:ds)                                                   {
+       {
+         cout<<it<<" ";                                                     return 1;
+       }                                                                  }
+       return ;                                                           return 0;                                               
+    }                                                                }
+    ds.push_back(arr[ind]);  //pick  call                             ds.push_back(arr[ind]); 
+    s+=arr[i];                                                        s+=arr[i];
+    func(ind+1,s,ds,sum,arr,n);                                       int l=func(ind+1,s,ds,sum,arr,n);                           
+    s-=arr[i];                                                        s-=arr[i];
+    ds.pop_back();                                                    ds.pop_back();                                                  
+    //non-pick call
+    func(ind+1,s,ds,sum,arr,n);                                      int r=func(ind+1,s,ds,sum,arr,n);
+                                                                     return l+r;
+  }
+int main()
+{
+   int n;
+   cin>>n;
+   int arr[n];
+   for(int i=0;i<n;i++)
+   {
+     cin>>arr[i];
+   }
+   int sum=2;
+   vector<int>ans;
+   func(0,0,ds,sum,arr,n);
+   return ds;
+ }
+ =======================================================================================  
+    
