@@ -607,8 +607,37 @@ for(int i=0;i<n;i++)
                Dynamic Array.
                Ease of Insertion/Deletion.
                Insertion at the beginning is a constant time operation and takes O(1) time, as compared to arrays where inserting an element at the beginning takes                    O(n) time,where n is the number of elements in the array.
+  -->STRUCTURE OF LINKED LIST:-
+  ===================================
+  struct Node{
+     int data;
+     Node* next;
+     Node(int val)
+     {
+        data=val;
+	next=NULL;
+     }
+   };
+========================================================================	
   -->BASIC OPERATIONS OF LINKED LIST:-
     ==================================================
     ->DELETION:-
       ==========
-        --->
+        --->delete from begin:-
+	        listnode* temp=head;
+		head=head->next;
+	-->delete from end:-
+	     listnode* end=head;
+	     listnode* prev=NULL;
+	     while(end->next)
+	     {
+	        prev=end;
+		end=end->next;
+	     }
+	     prev->next=NULL;
+      ===============================================
+     -->INSERTION:-
+     =========================
+      -->INSERT FORM BEGIN:-
+          
+		  
