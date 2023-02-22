@@ -639,5 +639,8 @@ for(int i=0;i<n;i++)
      -->INSERTION:-
      =========================
       -->INSERT FORM BEGIN:-
+           make a new node and assign new_node->next to the head and head to new_node.
+=========================================================================================
+
           
 		  
