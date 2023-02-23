@@ -600,6 +600,7 @@ for(int i=0;i<n;i++)
   LINKED LIST:-
   ===================
   -->A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.
+  -->A linked list is a linear data structure in which the elements are stored with the help of nodes.
   -->each node stores data and address field of the next node.
   -->The nodes are linked using pointers.
   -->here the pointer is next.
@@ -696,5 +697,7 @@ int main()
  SPACE COMPLEXITY:-
  ===================
  -->the amount of space required by an algorithm to solve the given problem is called space complexity.
-          
+ ==========================================================================================================================
+ Syntax for creating new node:-
+     ListNode* newHead=new ListNode();
 		  
