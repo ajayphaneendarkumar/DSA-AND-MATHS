@@ -700,4 +700,13 @@ int main()
  ==========================================================================================================================
  Syntax for creating new node:-
      ListNode* newHead=new ListNode();
-		  
+-->The last node of the linked list points to null.		  
+-->the entry point of the linked list is head.
+====================================================
+APPLICATIONS:-
+===================
+-->Linke lists are used to implement stacks and queues.
+-->linked lists are also used to represent trees and graphs.
+-->it is used in dynamic memory allocation.
+-->in music player previous songs and next songs are linked each other.
+===============================================================================
