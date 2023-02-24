@@ -710,3 +710,4 @@ APPLICATIONS:-
 -->it is used in dynamic memory allocation.
 -->in music player previous songs and next songs are linked each other.
 ===============================================================================
+
