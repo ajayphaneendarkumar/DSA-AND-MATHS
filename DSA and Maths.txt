@@ -712,4 +712,21 @@ APPLICATIONS:-
 ===============================================================================
 DOUBLY LINKED LIST:-
 ============================
--->
+-->It is linear data structure in which there are three fields called one integer data filed and two pointer data fileds.
+Structure:-
+============
+Class Struct{
+   int data;
+   Node* next;
+   Node* prev;
+   Struct(int x)
+   {
+     data =x;
+     next=NULL;
+     prev=NULL;
+    }
+};
+==========================================================
+-->the three values inthe double linked list are: prev,head,NULL.
+
+  
