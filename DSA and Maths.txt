@@ -736,7 +736,7 @@ Class Struct{
  -->insert at last:-
       Node* n1=new Node();
       Node* last=NULL;
-      last=n1->prev;
+      last->next=n1->prev;
       n1->prev=last;
       n1->next=NULL;
   ============================================================================
