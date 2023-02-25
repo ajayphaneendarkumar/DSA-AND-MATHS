@@ -727,6 +727,19 @@ Class Struct{
     }
 };
 ==========================================================
--->the three values inthe double linked list are: prev,head,NULL.
+-->the three values inthe double linked list are: prev,data,next.
+-->insert at begin:-
+     Node* nn=new Node();
+     nn->next=prev;
+     prev=nn;
+     nn=head;
+ -->insert at last:-
+      Node* n1=new Node();
+      Node* last=NULL;
+      last->next=n1;
+      n1->prev=last->next;
+      n1->next=NULL;
+  ============================================================================
+     
 
   
