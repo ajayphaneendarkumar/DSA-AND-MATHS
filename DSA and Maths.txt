@@ -739,6 +739,13 @@ Class Struct{
       last->next=n1->prev;
       n1->prev=last;
       n1->next=NULL;
-  ============================================================================
-   
+ -->insert at any position:-
+      Node* nn=new Node();
+      p1->next=nn->prev;
+      nn->prev=p1;
+      nn->next=p2;
+      p2->prev=nn;
+ ================================================================================
+ TREES:-
+ ==========
   
