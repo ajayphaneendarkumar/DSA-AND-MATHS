@@ -776,5 +776,61 @@ Class Struct{
 =================================================================================
  BINARY TREE:-
  =========================================
- -->Binary tree is a tree data structure where each node has atmost two children
+ -->Binary tree is a tree data structure where each node has atmost two children.
+ -->those two children are left and right.
+ -->if the tree is empty then value of root is NULL.
+ -->layout: 
+             (root)
+              /  \
+     left child   right child
+  -->structure of tree:-
+       struct Tree{
+           int data;
+	   Tree* left;
+	   Tree* right;
+	   Tree(int x)
+	   {
+	     data=x;
+	     left=NULL;
+	     right=NULL;
+	    }
+	 };
+ --------------------------------------------------------------
+ -->to solve we mainly recursive calls.(recursion)
+ ----------------------------------------------
+ Binary Tree Traversals:-
+ ========================
+ INORDER TRAVERSAL:-(left,root,right)
+ -------------------
+ void Func(Tree* root)
+ {
+     if(root==NULL)return ;
+     Func(root->left);
+     cout<<root->data;
+     Func(root->right);
+ }
+ ------------------------------
+ PRE-ORDER TRAVERSAL:-(root,left,right)
+ ==========================
+ void Func(Tree* root)
+ {
+     if(root==NULL)return ;
+     cout<<root->data;
+     Func(root->left);
+     Func(root->right);
+ }
+ --------------------------------
+ POST-ORDER TRAVERSAL:-(left,right,root)
+ ===================================
+ void Func(Tree* root)
+ {
+   if(root==NULL)return ;
+   Func(root->left);
+   Func(root->right);
+   cout<<root->data;
+  }
+  ====================================
+  
+ 
+ 
   
