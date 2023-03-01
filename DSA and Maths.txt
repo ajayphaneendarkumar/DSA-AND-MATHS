@@ -596,7 +596,7 @@ for(int i=0;i<n;i++)
  }
  sum=prefix[r]-prefix[l-1];
  if l==0 sum=prefix[r];
- ---------------------------------------------------
+===================================================================================
   LINKED LIST:-
   ===================
   -->A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.
@@ -746,6 +746,35 @@ Class Struct{
       nn->next=p2;
       p2->prev=nn;
  ================================================================================
- TREES:-
- =======================
+ RABBIT AND TORTOISE ALOGORITHM IS USED IN FINDING MIDDLE ELEMENTS ,CIRCULAR LINKED LIST ,LOOPING:
+ --------------------------------------------------------------------------------------------------
+ #include<bits/stdc++.h>
+ using namespace std;
+ struct Node{
+     int data;
+     Node* next;
+     Node(int x)
+     {
+        data=x;
+	next=NULL;
+     }
+ };
+ class Node{
+       public:
+          Node* middle(Node* head)
+	  { 
+	      Node* slow=head;
+	      Node* fast=head;
+	      while(fast!=NULL and fast->next!=NULL)
+	      {
+	          slow=slow->next;
+		  fast=fast->next->next;
+	      }
+	      return slow;
+	  }
+};
+=================================================================================
+ BINARY TREE:-
+ =========================================
+ -->Binary tree is a tree data structure where each node has atmost two children
   
