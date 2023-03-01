@@ -831,7 +831,16 @@ Class Struct{
   }
   ====================================
   Height of tree: The Height of the tree is the maximum height of any node. This is the same as the height of the root node.
-  
- 
+  Complete binary tree:-
+  --------------------------
+  A complete binary tree is a special type of binary tree where all the levels of the tree are filled completely except the lowest level nodes which are filled from as left as possible.
+ perfect binary tree:-
+ ------------------------
+ A binary tree of height ‘h’ having the maximum number of nodes is a perfect binary tree. 
+For a given height h, the maximum number of nodes is 2h+1-1.
+Full binary tree:-
+=========================
+For a fully binary tree ,each node has either two or zero children.
+----------------------------------------------------------------------------------
  
   
