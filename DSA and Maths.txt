@@ -830,6 +830,7 @@ Class Struct{
    cout<<root->data;
   }
   ====================================
+  Height of tree: The Height of the tree is the maximum height of any node. This is the same as the height of the root node.
   
  
  
