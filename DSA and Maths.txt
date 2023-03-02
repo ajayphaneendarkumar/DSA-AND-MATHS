@@ -842,5 +842,5 @@ Full binary tree:-
 =========================
 For a fully binary tree ,each node has either two or zero children.
 ----------------------------------------------------------------------------------
- 
+  
   
