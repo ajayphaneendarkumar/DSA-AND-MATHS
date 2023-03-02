@@ -829,7 +829,26 @@ Class Struct{
    Func(root->right);
    cout<<root->data;
   }
-  ====================================
+  =======================================
+  LEVEL-ORDER TRAVERSAL:-
+  ==============================
+  void printlevelorder(Tree* root,int level)
+  {
+     if(root==NULL)
+     {
+       return 0;
+      }
+      if(level==1)
+      {
+        cout<<root->data<<" ";
+       }
+       else if(level>1)
+       {
+          printlevelorder(root->left,level-1);
+	  printlevelorder(root->right,level-1);
+       }
+   }
+   ========================================================================================================================
   Height of tree: The Height of the tree is the maximum height of any node. This is the same as the height of the root node.
   Complete binary tree:-
   --------------------------
