@@ -830,6 +830,27 @@ Class Struct{
    cout<<root->data;
   }
  ========================================================================================================================
+ Level-order Traversal:-
+ =============================
+ queue<Node*>q;
+ q.push(root)
+ vector<int>v;
+ while(!q.empty())
+ {
+    Node* tmp=q.front();
+    v.psuh_back(tmp->data);
+    q.pop();
+    if(q->left!=NULL)
+    {
+      q.push(q->left);
+    }
+    if(q->right!=NULL)
+    {
+      q.push(q->right);
+     }
+  }
+  return v;
+  ==================================================================================
   Height of tree: The Height of the tree is the maximum height of any node. This is the same as the height of the root node.
   Complete binary tree:-
   --------------------------
@@ -862,5 +883,10 @@ int height(node* node)
     }
 }
 ========================================================================
-
+DFS TRAVERSALS:
+  ->PREORDER
+  ->POSTORDER
+  ->INORDER
+BFS TRAVERSAL:
+  -->LEVEL ORDER TRAVERSAL
   
