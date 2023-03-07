@@ -776,12 +776,13 @@ Class Struct{
 =================================================================================
  BINARY TREE:-
  =========================================
+ -->tree is a non-linear data structure.
  -->Binary tree is a tree data structure where each node has atmost two children.
  -->those two children are left and right.
  -->if the tree is empty then value of root is NULL.
  -->layout: 
              (root)
-              /  \
+              /  \ 
      left child   right child
   -->structure of tree:-
        struct Tree{
@@ -889,4 +890,23 @@ DFS TRAVERSALS:
   ->INORDER
 BFS TRAVERSAL:
   -->LEVEL ORDER TRAVERSAL
-  
+============================================================================
+GRAPHS:-
+============================
+-->graph is a non-linear datastructure that consists of vertices and edges .sometimes vertices are also called nodes and egdes defined as two nodes or vertices connected to each otheer.
+-->graph is denoted by G(V,E).
+-->1. Null Graph
+A graph is known as a null graph if there are no edges in the graph.
+-->2. Trivial Graph
+Graph having only a single vertex, it is also the smallest graph possible.
+-->3. Undirected Graph
+A graph in which edges do not have any direction. That is the nodes are unordered pairs in the definition of every edge. 
+
+-->4. Directed Graph
+A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
+-->5. Connected Graph
+The graph in which from one node we can visit any other node in the graph is known as a connected graph. 
+
+-->6. Disconnected Graph
+The graph in which at least one node is not reachable from a node is known as a disconnected graph.
+-->
