@@ -178,6 +178,9 @@ int x=*min_element(v.begin(),v.end());
          s.insert(b[i]);
 	}
 	return s.size();
+To Copy one vector to another vector:-
+-----------------------------------------------------
+--> vect2.insert(vect2.begin(), vect1.begin(), vect1.end());
 ====================================================================
 -->for(auto it:v)
   {
