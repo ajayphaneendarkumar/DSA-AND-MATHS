@@ -963,4 +963,14 @@ The graph in which at least one node is not reachable from a node is known as a 
          DFS(0,adj,vis);
      }
      ======================================================
- 
+     TOPOLOGICAL SORTING:-
+     ========================
+     Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge u v, vertex u comes before v in the ordering.
+     -->topological sort is applicable only for directed acyclic graph.
+     -->In topological sorting,
+     In topological sorting,
+		We use a temporary stack. 
+		We don’t print the vertex immediately, 
+		we first recursively call topological sorting for all its adjacent vertices, then push it to a stack. 
+		Finally, print the contents of the stack. 
+     -->
