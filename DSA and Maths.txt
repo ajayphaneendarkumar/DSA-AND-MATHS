@@ -125,6 +125,7 @@ STL :-
 STL CONTAINERS:-
 =======================
 sequence containers:-implement a data structures which can be accessed in a sequential manner.
+Time complexity is o(n) and space complexity is o(1).
 -->vectors,lists,arrays,dequeue
 -->vectors:-
 --->vector<int>v; //empty vector
@@ -220,6 +221,7 @@ Forward list:-
 syntax:-
    forward_list<int>l;
    same operations like list.
+   the difference between list and forward list is -->forward list allows unidirectional access to its data and list allows bidirectional access to its data.
 ------------------------------------------------------------------------------------------
 DEQUE:-
 =======================================================
